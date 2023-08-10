@@ -257,6 +257,19 @@ button {
   flex-basis: calc((100%-72px) / 4);
 }
 
+.section-solutions-box {
+  background: var(--color-CLOUD);
+  padding: 24px 0;
+  margin-bottom: 8px;
+}
+
+.section-solutions-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
 .section-wedo {
   padding-bottom: 120px;
 }
