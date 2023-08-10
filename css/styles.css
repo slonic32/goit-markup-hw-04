@@ -339,7 +339,6 @@ button {
 .section-team-icon-item {
   background-color: var(--color-Iris);
   flex-basis: calc((100% - 72px) / 4);
-
   border-radius: 50%;
 }
 
@@ -397,7 +396,47 @@ button {
 
 .section-footer-text {
   color: var(--color-CLOUD);
+}
+
+.section-footer-flex {
+  display: flex;
+}
+
+.section-footer-block-logo {
+  margin-right: 120px;
   max-width: 264px;
+}
+
+.section-footer-icons-text {
+  color: var(--color-WHITE);
+  margin-bottom: 16px;
+}
+
+.section-footer-list-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.section-footer-icon-item {
+  background-color: var(--color-Iris);
+  flex-basis: 40px;
+  border-radius: 50%;
+}
+
+.section-footer-icon-item:hover,
+.section-footer-icon-item:focus {
+  background-color: var(--color-GREEN);
+}
+
+.section-footer-icon-link {
+  display: block;
+  padding: 8px;
+}
+
+.section-footer-icon {
+  fill: var(--color-CLOUD);
+  margin: 0 auto;
 }
 
 .section-portfolio {
