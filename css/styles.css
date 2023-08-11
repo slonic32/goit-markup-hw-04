@@ -629,11 +629,71 @@ button {
 .is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: all;
+  pointer-events: none;
 }
 
 .section-modal {
   background: var(--color-NAVY-BLUE-modal);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transition-property: opacity, visibility;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: scale(1);
+  width: 408px;
+  min-height: 584px;
+  background: var(--color-Dairy);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition-property: transform;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  background-color: var(--color-cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background-color, border;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--color-OCEAN);
+  border: none;
+}
+
+.modal-button-icon {
+  transition-property: fill;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-icon:hover,
+.modal-button-icon:focus {
+  fill: var(--color-WHITE);
 }
