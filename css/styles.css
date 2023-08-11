@@ -691,7 +691,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-icon:hover,
-.modal-button-icon:focus {
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
   fill: var(--color-WHITE);
 }
